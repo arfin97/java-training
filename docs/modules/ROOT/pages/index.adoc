@@ -1,0 +1,30 @@
+= Welcome, Java Enthusiasts!
+
+== Training Segments
+
+This java training has been designed into three segment.
+
+=== Beginner Level
+
+No prior knowledge needed to start from the beginner level.
+Programming concepts (e.g. data structure, object oriented programming etc) as well as Java core concepts will be covered in this level.
+After completion of this segment trainee can do basic java programming.
+
+=== Intermediate Level
+
+Spring framework in depth will be covered in this segment.
+After completion of this segment trainee can solve small to medium level business problem through java programming.
+
+=== Advance Level
+
+Large distributed system development and architecture design will be covered in this segment.
+
+== Code Practice Methodology
+
+This training encourages to practice code through http://codekata.com/[Code Kata, window=_blank].
+
+[quote,'https://en.wikipedia.org/wiki/Kata_(programming)[Wikipedia, window=_blank]']
+____
+A code kata is an exercise in programming which helps programmers hone their skills through practice and repetition.
+In 1999, the term was used by Dave Thomas, co-author of the book The Pragmatic Programmer, in a bow to the Japanese concept of kata in the martial arts.
+____

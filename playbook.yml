@@ -1,0 +1,29 @@
+site:
+  title: Training
+  url: https://training.rezaulhasan.me
+  start_page: java::index.adoc
+  keys:
+    google_analytics: 'UA-164685388-1'
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_path: docs
+    - url: https://github.com/xomidar/java-training-test.git
+      branches: HEAD
+      start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+#    start_path: dark
+#  default_layout: article
+  supplemental_files: ./supplemental-ui
+output:
+  dir: ./public
+  clean: true
+  destinations:
+    - provider: archive
+      path: ./public/master.zip
+    - provider: fs
+      path: ./

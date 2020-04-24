@@ -1,0 +1,3 @@
+= Java Training
+
+This repository is for http://training.rezaulhasan.me[Java Training]
