@@ -1,6 +1,6 @@
 site:
   title: Training
-  url: https://training.rezaulhasan.me
+  url: http://training.rezaulhasan.me
   start_page: java::index.adoc
   keys:
     google_analytics: 'UA-164685388-1'
@@ -9,15 +9,19 @@ content:
     - url: .
       branches: HEAD
       start_path: docs
-    - url: https://github.com/xomidar/java-training-test.git
-      branches: HEAD
-      start_path: docs
+asciidoc:
+  attributes:
+    hide-uri-scheme: ''
+    table-caption: ~
+    page-toclevels: '3'
+    tabs: tabs
+  extensions:
+    - ./lib/tabs-block.js
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    #url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://github.com/couchbase/docs-ui/releases/download/v246/ui-bundle.zip
     snapshot: true
-#    start_path: dark
-#  default_layout: article
   supplemental_files: ./supplemental-ui
 output:
   dir: ./public

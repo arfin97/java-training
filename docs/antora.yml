@@ -1,12 +1,7 @@
 name: java
 title: Java Training
 version: master
-display_version: edge
 preview: true
-prerelease: Beta
-asciidoc:
-  attributes:
-    table-caption: false
 nav:
   - modules/ROOT/nav.adoc
   - modules/beginner/nav.adoc

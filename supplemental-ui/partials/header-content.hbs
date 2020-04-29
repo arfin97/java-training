@@ -1,21 +1,37 @@
-<header class="header" role="banner">
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <div class="navbar-item">
-                <a href="http://training.rezaulhasan.me">{{site.title}}</a>
-                <span class="separator">//</span>
-                <a href="{{or site.url (or siteRootUrl siteRootPath)}}">Docs</a>
+<header class="header">
+    <nav class="navbar" id="topbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-link" href="{{or siteRootUrl siteRootPath}}">TRAINING //</a>
+                <button class="navbar-burger" data-target="topbar-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            {{#if env.ALGOLIA_API_KEY}}
-                <div class="navbar-item hide-for-print">
-                    <input id="search-input" type="text" placeholder="Search docs">
+            <div id="topbar-menu" class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown">
+                        <a class="navbar-link" href="{{or siteRootUrl siteRootPath}}">Docs</a>
+                        <div class="navbar-dropdown explore">
+                            <div class="cols">
+                                <ul>
+                                    <li><a href="{{relativize site.components.java.url}}">Java Training</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="navbar-item component" href="{{relativize page.componentVersion.url}}">{{#unless
+                            (eq page.componentVersion.displayVersion 'master')}}
+                        <span class="version">{{page.componentVersion.displayVersion}}</span>{{/unless}}</a>
+                    {{#if env.ALGOLIA_API_KEY}}
+                        <form class="navbar-item search">
+                            <input type="text" placeholder="Search Couchbase Docs" class="query" id="search-query">
+                            <button type="button" class="search"><span>Search</span></button>
+                        </form>
+                    {{/if}}
                 </div>
-            {{/if}}
-            <button class="navbar-burger" data-target="topbar-nav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            </div>
         </div>
     </nav>
 </header>

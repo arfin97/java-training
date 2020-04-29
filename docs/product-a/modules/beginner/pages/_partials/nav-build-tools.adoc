@@ -1,3 +1,0 @@
-* Build Tools
-** xref:gradle.adoc[Gradle]
-** xref:maven.adoc[Maven]

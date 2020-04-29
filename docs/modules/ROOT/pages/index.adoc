@@ -1,29 +1,44 @@
 = Welcome, Java Enthusiasts!
+:description: Java Training.  \
+Beginner | Intermediate | Advance
+:keywords: java, oop, programming, data structure, spring, spring boot
+:reftext: Welcome
+:navtitle: Welcome
+:page-layout: home
+:!sectids:
 
-== Training Segments
+This java training has been designed into three segments.
 
-This java training has been designed into three segment.
+[.cards.cards-3.personas.conceal-title]
+== {empty}
 
-=== Beginner Level
+[.card]
+=== Beginner
 
-No prior knowledge needed to start from the beginner level.
+No prior knowledge required to start from the beginner level.
 Programming concepts (e.g. data structure, object oriented programming etc) as well as Java core concepts will be covered in this level.
 After completion of this segment trainee can do basic java programming.
 
-=== Intermediate Level
+* xref:java:beginner:intellij-idea.adoc[Start Learning]
+
+[.card]
+=== Intermediate
 
 Spring framework in depth will be covered in this segment.
 After completion of this segment trainee can solve small to medium level business problem through java programming.
 
-=== Advance Level
+[.card]
+=== Advance
 
 Large distributed system development and architecture design will be covered in this segment.
 
+[.tiles.browse]
 == Code Practice Methodology
 
-This training encourages to practice code through http://codekata.com/[Code Kata, window=_blank].
+This training encourages practicing code through http://codekata.com/[Code Kata, window=_blank].
 
-[quote,'https://en.wikipedia.org/wiki/Kata_(programming)[Wikipedia, window=_blank]']
+[quote,'https://en.wikipedia.org/wiki/Kata_(programming)[Wikipedia,window=_blank]']
+
 ____
 A code kata is an exercise in programming which helps programmers hone their skills through practice and repetition.
 In 1999, the term was used by Dave Thomas, co-author of the book The Pragmatic Programmer, in a bow to the Japanese concept of kata in the martial arts.

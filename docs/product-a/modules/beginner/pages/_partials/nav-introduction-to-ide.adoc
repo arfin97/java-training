@@ -1,2 +1,0 @@
-* Introduction to IDE
-** xref:intellij-idea.adoc[IntelliJ IDEA]

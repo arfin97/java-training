@@ -1,3 +1,0 @@
-.Beginner
-include::beginner:partial$nav-introduction-to-ide.adoc[]
-include::beginner:partial$nav-build-tools.adoc[]

@@ -1,0 +1,320 @@
+=== Most Used Keymaps
+
+Most used keymaps for productive development.
+
+.Windows & Linux
+//[cols="v,d"]
+|===
+^.^|Shortcut ^.^|Purpose
+
+2+^.^h| General
+
+|kbd:[Alt + 0-9]
+|Open corresponding <<tool-window,tool window>>
+
+|kbd:[Ctrl+Shift+A]
+|Find Action
+
+|kbd:[Ctrl+Alt+S]
+|Open Settings dialog
+
+|kbd:[Ctrl+Alt+Shift+S]
+|Open Project Structure dialog
+
+|kbd:[Ctrl+Shift+F12]
+|Toggle maximizing editor
+
+
+
+2+^.^h| Search/Replace
+
+|kbd:[Shift+Shift]
+|<<search-everywhere,Search everywhere>>
+
+
+
+2+^.^h| Editing
+
+|kbd:[Alt+Enter]
+|Show intention actions and quick-fixes
+
+|kbd:[Ctrl+Shift+Enter]
+|Complete current statement
+
+|kbd:[Ctrl+Alt+L]
+|Reformat code
+
+|kbd:[Ctrl+W]
+
+kbd:[Ctrl+Shift+W]
+|Extend or shrink selection
+
+|kbd:[Ctrl+/]
+
+kbd:[Ctrl+Shift+/]
+|Add/remove line or block comment
+
+|kbd:[Ctrl+P]
+|Parameter info (within method call arguments)
+
+|kbd:[Ctrl+Shift+Space]
+|Smart code completion
+
+|kbd:[Ctrl+Shift+Space]
+|Smart code completion
+
+
+
+2+^.^h| Navigation
+
+|kbd:[F2]
+
+kbd:[Shift+F2]
+|Navigate between code issues
+
+|kbd:[Ctrl+E]
+|View recent files
+
+|kbd:[Ctrl+B]
+|Go to declaration
+
+|kbd:[Ctrl+N]
+|Go to class
+
+|kbd:[Ctrl+G]
+|Go to line
+
+|kbd:[Ctrl+Shift+I]
+|Open quick definition lookup
+
+
+
+2+^.^h| Usage Search
+
+|kbd:[Alt+F7]
+|Find usages
+
+
+
+2+^.^h| Live Templates
+
+
+|kbd:[Ctrl+Alt+J]
+|Surround with Live Template
+
+|kbd:[Ctrl + J]
+|<<live-template,Insert Live Template>>
+
+
+
+2+^.^h| Refactoring
+
+|kbd:[Ctrl+Shift+Alt+T]
+|Invoke refactoring
+
+
+
+2+^.^h| Debugging
+
+|kbd:[F8]
+|Step over
+
+|kbd:[F7]
+|Step into
+
+|kbd:[Alt+F8]
+|Evaluate expression
+
+|kbd:[Ctrl+F8]
+|Toggle breakpoint
+
+
+
+2+^.^h| Compile and Run
+
+|kbd:[Ctrl+F9]
+|Make project
+
+|kbd:[Shift+F10]
+|Run
+
+|kbd:[Shift+F9]
+|Debug
+
+
+
+2+^.^h| VCS/Local History
+
+|kbd:[Ctrl+K]
+|Commit project to VCS
+
+|kbd:[Ctrl+Shift+K]
+|Push commits
+
+
+|===
+
+[#search-everywhere]
+kbd:[Shift + Shift]::
+Press double kbd:[shift] to search everywhere.
+Type kbd:[/] IntelliJ IDEA will list the available groups of settings.
+Select the one you need and press kbd:[Enter] or type the settings name by prepending with kbd:[#] and press kbd:[Enter]
+https://www.jetbrains.com/help/idea/searching-everywhere.html[Details, window="_blank"]
+
+[#tool-window]
+=== Tool Windows Keymap
+
+.Windows & Linux
+|===
+^.^|Shortcut ^.^|Tool Window
+
+|kbd:[Alt+1]
+|*Project*
+
+|kbd:[Alt+2]
+|*Favourite*
+
+|kbd:[Alt+3]
+|*Find*
+
+|kbd:[Alt+4]
+|*Run*
+
+|kbd:[Alt+5]
+|*Debug*
+
+|kbd:[Alt+6]
+|*TODO*
+
+|kbd:[Alt+7]
+|*Structure*
+
+|kbd:[Alt+8]
+|*Services*
+
+|kbd:[Alt+9]
+|*Git*
+
+|kbd:[Alt+9]
+|*Terminal*
+
+|kbd:[F12]
+|Jump to Last Tool Window
+
+|kbd:[Ctrl+Shift+F12]
+|Hide All Tool Windows
+
+|===
+
+[#live-template]
+=== Live Templates
+
+To see live templates in action, type live template shortcut (e.g `psvm`) in your editor window and hit kbd:[Tab].
+
+TIP: Detail list of live templates are available under menu:File[Settings > Editor > Live Templates].
+
+==== Declaration
+
+main() method declaration
+
+[source,java]
+.psvm / main
+----
+    public static void main(String[] args) {
+            //code
+    }
+----
+
+==== Statement
+
+Prints a string to System.out
+
+[source,java]
+.sout
+----
+        System.out.println(myVariable);
+----
+
+Inserts 'if null' expression
+
+[source,java]
+.ifn
+----
+        if (myVariable == null) {
+            // code
+        }
+----
+
+Inserts 'if not null' expression
+
+[source,java]
+.inn
+----
+        if (myVariable != null) {
+            //code
+        }
+----
+
+Create iteration loop
+
+[source,java]
+.fori
+----
+        for (int i = 0; i < myVariable; i++) {
+            //code
+        }
+----
+
+Iteration according to Java SDK 1.5 style
+
+[source,java]
+.iter
+----
+        for (String arg : args) {
+
+        }
+----
+
+Check object type with instanceof and downcast it
+
+[source,java]
+.inst
+----
+        if (args instanceof Object) {
+            Object o = (Object) args;
+                //
+        }
+----
+
+Iterate elements of `java.util.Collection`
+
+[source,java]
+.itco
+----
+        for (Iterator iterator = collection.iterator(); iterator.hasNext(); ) {
+            Object next =  iterator.next();
+
+        }
+----
+
+Iterate elements of `java.util.Iterator`
+
+[source,java]
+.itit
+----
+        while (iterator.hasNext()) {
+            Object next =  iterator.next();
+
+        }
+----
+
+Iterate elements of `java.util.List`
+
+[source,java]
+.itli
+----
+        for (int i = 0; i < list.size(); i++) {
+            Object  (A) list.get(i);
+            //
+         }
+----
