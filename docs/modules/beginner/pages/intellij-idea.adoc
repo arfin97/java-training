@@ -43,8 +43,14 @@ include::intellij-idea-keymap.adoc[]
 
 == Additional Resources
 
-- Pluralsight - https://app.pluralsight.com/library/courses/intellij-ce-getting-started/[Getting Started with IntelliJ CE, window="_blank"] by David Starr.
-Duration *2h 47m*.
-Released *1 Sep 2017*.
-- https://www.jetbrains.com/help/idea/getting-started.html[IntelliJ IDEA Getting started, window="_blank"]
-- https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html[IntelliJ IDEA keyboard shortcuts﻿, window="_blank"]
+=== Watch
+
+* Pluralsight - https://app.pluralsight.com/library/courses/intellij-ce-getting-started/[Getting Started with IntelliJ CE, window="_blank"] by David Starr.
+** Duration *2h 47m*.
+** Released *1 Sep 2017*.
+
+=== Read
+
+* https://www.jetbrains.com/help/idea/getting-started.html[IntelliJ IDEA Getting started, window="_blank"]
+* https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html[IntelliJ IDEA keyboard shortcuts﻿, window="_blank"]
+
